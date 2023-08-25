@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450, initial-scale=1.0">
+    <title>FitCon</title>
+
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- noto sans kr -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- EXO2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- 슬라이드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+
+
+    <link rel="stylesheet" href="./css/global_style.css">
+    <link rel="stylesheet" href="./css/main_style.css">
+    <link rel="stylesheet" href="./css/btn.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="header_box">
+            </div><!-- header_box -->
+            <div class="header_inner">
+                <div class="h_logo"><a href="./index.html"><img src="./images/h_logo.png" alt="header_logo"></a></div>
+                <ul id="gnb">
+                    <!-- sub_category에 hover하면 flip 실행 -->
+                    <li class="sub_category">
+                        <div class="flip">
+                            <a href="./pages/class.html" class="front en">Class</a>
+                            <a href="./pages/class.html" class="back en">Class</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>Online</span></a></li>
+                            <li><a href="#"><span>강사진</span></a></li>
+                            <li><a href="#"><span>Offline</span></a></li>
+                            <li><a href="#"><span>오시는길</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flip">
+                            <a href="./pages/brand.html" class="front en">Brand</a>
+                            <a href="./pages/brand.html" class="back">Brand</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>회사소개</span></a></li>
+                            <li><a href="#" class="en"><span>Work</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flip">
+                            <a href="#" class="front">Shop</a>
+                            <a href="#" class="back">Shop</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>프로그램</span></a></li>
+                            <li><a href="#"><span>단백질쉐이크</span></a></li>
+                            <li><a href="#"><span>샐러드</span></a></li>
+                            <li><a href="#"><span>피트니스</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flip">
+                            <a href="#" class="front">Community</a>
+                            <a href="#" class="back">Community</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>공지사항</span></a></li>
+                            <li><a href="#"><span>이벤트</span></a></li>
+                            <li><a href="#"><span>후기</span></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul class="h_icons">
+                    <li>
+                        <a href="#">
+                            <div class="h_icon"><img src="./images/icons/member_01.png" alt="회원가입">
+                                <div class="h_icon_h">
+                                    <img src="./images/icons/member_02.png" alt="회원가입">
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="h_icon"><img src="./images/icons/user_01.png" alt="로그인">
+                                <div class="h_icon_h"><img src="./images/icons/user_02.png" alt="로그인"></div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="h_icon"><img src="./images/icons/cart_01.png" alt="장바구니">
+                                <div class="h_icon_h"><img src="./images/icons/cart_02.png" alt="장바구니"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- side_icon start -->
+    <div id="side_icon">
+        <ul>
+            <li>
+                <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D2ca4a0a5-bfc2-4883-8190-9b27fc330ccb#login"
+                    id="kakao_side" target="_blank">
+                    <img src="./images/kakao.svg" alt="kakao">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" id="instagram_side" target="_blank">
+                    <div class="side_normal">
+                        <img src="./images/instagram.svg" alt="instagram">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="goto_top">
+                    <p><span class="en">TOP</span></p>
+                </a>
+            </li>
+        </ul>
+
+
+
+    </div>
+    <!-- side_icon end -->
+
+    <!-- main_banner start -->
+    <div class="swiper main_banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div id="mb_01">
+                    <img src="./images/main_banner/main_banner_01.jpg" alt="main_banner_01">
+                    <div class="mb_01_text_01">
+                        <h1>온라인 클래스<br>최대 30% 할인</h1>
+                        <h2>온라인 식단 집중관리<br>클래스 제외</h2>
+                        <a href="#" class="more_btn">더 알아보기 ></a>
+                    </div>
+                    <div class="mb_01_text_02">
+                        <h1>오프라인 이용권<br>3+1 이벤트 진행중</h1>
+                        <h2>3개월 등록 시 1개월 추가</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div id="mb_02">
+                    <img src="./images/main_banner/main_banner_02.jpg" alt="main_banner_02">
+                    <a href="#" class="more_btn">바로가기 ></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div id="mb_03">
+                    <img src="./images/main_banner/main_banner_03.jpg" alt="main_banner_03">
+                    <a href="#" class="more_btn">구매하기 ></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next mb_color mb_next"></div>
+        <div class="swiper-button-prev mb_color mb_prev"></div>
+        <div class="swiper-pagination mb_color"></div>
+    </div>
+    <!-- main_banner end -->
+
+    <div id="class">
+        <div class="class_inner">
+            <h2 class="title_link en"><a href="#"><span>CLASS</span>
+                    <img src="./images/icons/more_icon.png" alt="right_arrow"></a></h2>
+            <h1 class="title">언제나 함께하는<br>온라인 운동 클래스</h1>
+
+            <div class="tabs">
+                <div role="tablist" aria-orientation="vertical" aria-label="Entertainment">
+                    <button class="class_tab" id="m_class_01" role="tab" aria-selected="true"
+                        aria-controls="m_class_01_tab">
+                        <span class="en">ONLINE 1:1<br>
+                            PERSONAL TRAINING</span>
+                    </button>
+                    <button class="class_tab" tabindex="-1" id="m_class_02" role="tab" aria-selected="false"
+                        aria-controls="m_class_02_tab">
+                        <span class="en">ONLINE GROUP<br>
+                            TRAINING</span>
+                    </button>
+                    <button class="class_tab" tabindex="-1" id="m_class_03" role="tab" aria-selected="false"
+                        aria-controls="m_class_03_tab">
+                        <span class="en">DIET MANAGEMENT<br>
+                            PROGRAM</span>
+
+                    </button>
+                    <button class="class_tab" tabindex="-1" id="m_class_04" role="tab" aria-selected="false"
+                        aria-controls="m_class_04_tab">
+                        <span class="en">CONTINUOUS<br>
+                            COMMUNICATION</span>
+                    </button>
+                    <button class="class_tab" tabindex="-1" id="m_class_05" role="tab" aria-selected="false"
+                        aria-controls="m_class_05_tab">
+                        <span class="en">ADVANTAGE OF<br>
+                            ONLINE TRAINING</span>
+                    </button>
+
+                </div>
+                <div class="tabcontent">
+                    <div tabindex="0" id="m_class_01_tab" role="tabpanel" aria-labelledby="m_class_01">
+                        <div class="content">
+                            <div class="content_img"><img src="./images/icons/main_class_01.svg" alt="class_1to1"></div>
+                            <p>전문가와 비대면 소통으로 나만을 위한 운동루틴과 식단설계<br> 1대1 <span>밀착관리</span>프로그램</p>
+                            <a href="#" class="more_btn">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div tabindex="0" id="m_class_02_tab" role="tabpanel" aria-labelledby="m_class_02" hidden="">
+                        <div class="content">
+                            <div class="content_img"><img src="./images/icons/main_class_02.svg" alt="class_group">
+                            </div>
+                            <p>실시간 LIVE를 통한 운동과 식단관리를 포함한<br>
+                                <span>단체 운동</span> 프로그램
+                            </p>
+                            <a href="#" class="more_btn">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div tabindex="0" id="m_class_03_tab" role="tabpanel" aria-labelledby="m_class_03" hidden="">
+                        <div class="content">
+                            <div class="content_img"><img src="./images/icons/main_class_03.svg" alt="class_group">
+                            </div>
+                            <p>개인의 생활패턴과 활동량 체형에 적합한
+                                <br><span>식단 설계</span>
+                            </p>
+                            <a href="#" class="more_btn">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div tabindex="0" id="m_class_04_tab" role="tabpanel" aria-labelledby="m_class_04" hidden="">
+                        <div class="content">
+                            <div class="content_img"><img src="./images/icons/main_class_04.svg" alt="class_group">
+                            </div>
+                            <p>항상 열려있는 실시간 피드백과 <span>끊임없는 소통</span>을 통해<br>
+                                포기하지 않는 운동으로 만들도록 하겠습니다.</p>
+                            <a href="#" class="more_btn">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div tabindex="0" id="m_class_05_tab" role="tabpanel" aria-labelledby="m_class_05" hidden="">
+                        <div class="content">
+                            <div class="content_img"><img src="./images/icons/main_class_05.svg" alt="class_group">
+                            </div>
+                            <p>저렴한 가격과 언제 어디서나 효율적인 운동을 할 수 있는<br>
+                                <span>다양한 장점</span>이 있습니다.
+                            </p>
+                            <a href="#" class="more_btn">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="offline_bg_01">
+        <div><img src="./images/offline_text_01.png" alt=""></div>
+    </div>
+
+    <div id="trainers">
+        <div class="trainers_inner">
+            <h2 class="title_link en"><a href="#"><span>trainers</span>
+                    <img src="./images/icons/more_icon.png" alt="right_arrow"></a></h2>
+            <h1 class="title"><span class="en">FitCon</span> 강사진</h1>
+
+            <div class="t_flex">
+                <div class="t_img_box">
+                    <img id="currTrainerImg" src="./images/t_img_01.png" alt="trainer">
+                </div>
+                <div class="t_detail">
+                    <div class="t_d_up">
+                        <div class="t_name">
+                            <h1 id="t_curr_name">제이스</h1>
+                            <div class="t_name_en">
+                                <img src="./images/t_name_01.png" alt="name_en" id="t_curr_name_en">
+                            </div>
+                        </div>
+                        <p class="t_text" id="t_curr_text"><span class="en">FitCon CEO</span><br>국제 트레이너 & 스포츠 영양코치</p>
+                    </div>
+                    <div class="t_d_down">
+                        <ul class="t_head_list">
+                            <li>
+                                <button type="button" id="t_img_01" onclick="changeTrainerImg(this.id)">
+                                    <img src="./images/t_head_img_01.png" alt="jace_head" class="grayscale_img">
+                                </button>
+                            </li>
+                            <li>
+                                <button id="t_img_02" onclick="changeTrainerImg(this.id)">
+                                    <img src="./images/t_head_img_02.png" alt="lisa_head" class="grayscale_img">
+                                </button>
+                            </li>
+                            <li>
+                                <button id="t_img_03" onclick="changeTrainerImg(this.id)">
+                                    <img src="./images/t_head_img_03.png" alt="michael" class="grayscale_img"></button>
+                            </li>
+                        </ul>
+                        <div class="more_flex">
+                            <button class="button">
+                                <div class="button__content">
+                                    <div class="button__icon"> <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 283.46 283.46">
+                                            <g>
+                                                <path
+                                                    d="M283.46,133.45v16.6a18.3,18.3,0,0,0-.46,2.39,133.23,133.23,0,0,1-16.18,55.81c-22,39.92-55.53,64.36-100.38,73-5.41,1-10.92,1.5-16.39,2.23h-16.6a16,16,0,0,0-2.14-.45c-19.78-1.35-38.58-6.44-55.85-16.11C28.88,240.81,3.55,201,.26,147.66a129.8,129.8,0,0,1,16.46-72.4c26-46.47,65.89-71.71,119.08-75a131.34,131.34,0,0,1,72.42,16.42q60,33,73,100.4C282.27,122.48,282.73,128,283.46,133.45Zm-23.67,8.38a118,118,0,0,0-236.08-.3c-.28,65,52.6,118.06,117.89,118.26C206.68,260,259.69,207.08,259.79,141.83Z" />
+
+
+                                                <path
+                                                    d="M161.18,141.5a24.56,24.56,0,0,1-3.05-2.13Q134.73,116,111.36,92.63c-6.1-6.1-6.69-13.13-1.55-18.26s12.16-4.54,18.25,1.56q28,28,56,55.95c6.64,6.64,6.66,13.07.06,19.68q-28.26,28.27-56.54,56.54c-3.57,3.58-7.61,5.47-12.71,4a11.67,11.67,0,0,1-6-18.48,31.93,31.93,0,0,1,2.61-2.85q23.17-23.19,46.37-46.36C158.64,143.6,159.53,142.93,161.18,141.5Z" />
+
+                                            </g>
+
+
+                                        </svg>
+                                    </div>
+                                    <h3 id="t_more_curr_name" class="button__name">제이스</h3>
+
+                                    <p class="button__text">핵심 클래스</p>
+                                    <p class="button__go">이동</p>
+                                </div>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="before_after">
+        <div class="ba_inner">
+
+            <h2 class="title_link en"><a href="#"><span>BEFORE &amp; AFTER</span>
+                    <img src="./images/icons/more_icon.png" alt="right_arrow"></a></h2>
+            <h1 class="title">최고의 결과, 최소의 시간</h1>
+            <div class="ba_contents">
+                <div class="ba_box" id="ba_01">
+                    <div class="ba_content">
+                        <div class="ba_img_box">
+                            <div class="before_img">
+                                <img src="./images/before_01.jpg" alt="client_before_01">
+                            </div>
+                            <div class="after_img">
+                                <img src="./images/after_01.jpg" alt="client_after_01">
+                            </div>
+                        </div>
+                        <div class="ba_text_box">
+                            <h3>[온라인 1:1 PT] 24주</h3>
+                            <h2>30대 초반 꿈에그리던<br>
+                                -20kg 감량후기</h2>
+                            <ul class="ba_count">
+                                <li class="before_num">
+                                    <h5>before</h5>
+                                    <h4>75.3kg</h4>
+                                </li>
+                                <li class="bac_center">
+                                    <h5>감량</h5>
+                                    <h4>-21.6kg</h4>
+                                </li>
+                                <li class="after_num">
+                                    <h5>after</h5>
+                                    <h4>53.7kg</h4>
+                                </li>
+                            </ul>
+
+                            <p> "친절하게 상담해주시고<br>
+                                음식 취향에 따라 추천도 해주시고<br>어떤 회사의 음식 좋은지도 잘 아시고 <br>친절하게 해주셔서 기분도 좋았어요!<br>
+                                마라탕 먹을 때 어떤 거 넣어먹어야 좋은지도 <br>알려주셔서
+                                싱글벙글해졌어요!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ba_box" id="ba_02">
+                    <div class="ba_content">
+                        <div class="ba_img_box">
+                            <div class="before_img">
+                                <img src="./images/before_02.jpg" alt="client_before_02">
+                            </div>
+                            <div class="after_img">
+                                <img src="./images/after_02.jpg" alt="client_after_02">
+                            </div>
+                        </div>
+                        <div class="ba_text_box">
+                            <h3>[온라인 Group] 12주</h3>
+                            <h2>30대 중반 미뤄놨던<br>
+                                -10kg 감량후기</h2>
+                            <ul class="ba_count">
+                                <li class="before_num">
+                                    <h5>before</h5>
+                                    <h4>88.6kg</h4>
+                                </li>
+                                <li class="bac_center">
+                                    <h5>감량</h5>
+                                    <h4>-11.7kg</h4>
+                                </li>
+                                <li class="after_num">
+                                    <h5>after</h5>
+                                    <h4>76.9kg</h4>
+                                </li>
+                            </ul>
+                            <p>
+                                "온라인 PT는 생소해서 <br>반신반의 하면서 등록했는데<br>
+                                기대 이상으로 너무 좋았어요!<br>
+                                한달만 하고 말려다가 재등록 했습니다!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ba_box" id="ba_03">
+                    <div class="ba_content">
+                        <div class="ba_img_box">
+                            <div class="before_img">
+                                <img src="./images/before_03.jpg" alt="client_before_03">
+                            </div>
+                            <div class="after_img">
+                                <img src="./images/after_03.jpg" alt="client_after_03">
+                            </div>
+                        </div>
+                        <div class="ba_text_box">
+                            <h3>[온라인 1:1 PT] 24주</h3>
+                            <h2>20대 후반 헬린이였던<br>
+                                괴물 등장!!</h2>
+                            <ul class="ba_count">
+                                <li class="before_num">
+                                    <h5>before</h5>
+                                    <h4>87.4kg</h4>
+                                </li>
+                                <li class="bac_center">
+                                    <h5>감량</h5>
+                                    <h4>-8.2kg</h4>
+                                </li>
+                                <li class="after_num">
+                                    <h5>after</h5>
+                                    <h4>79.2kg</h4>
+                                </li>
+                            </ul>
+
+                            <p> "피드백 정말 상세하게 해주시고 주기적으로 <br>
+                                짜주시는 루틴뿐만 아니라 부수적으로<br>
+                                스트레칭이나 운동, 건강정보 챙겨주시는 <br>것도 너무 좋았어요. <br>그리고 기록으로 남으니 따로 운동하는 날에도 <br>다시 보면서 운동할 수도
+                                있구요.<br>
+                                온라인이지만 운동
+                                봐주시는 <br>코치가 있다고 생각하니 <br>꾸준히 하게 되더라구요."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ba_box" id="ba_04">
+                    <div class="ba_content">
+                        <div class="ba_img_box">
+                            <div class="before_img">
+                                <img src="./images/before_04.jpg" alt="client_before_04">
+                            </div>
+                            <div class="after_img">
+                                <img src="./images/after_04.jpg" alt="client_after_04">
+                            </div>
+                        </div>
+                        <div class="ba_text_box">
+                            <h3>[온라인 1:1 PT] 24주</h3>
+                            <h2>20대 중반 자세교정<br>클래스 수강<br>
+                                생활 속 불편함 감소</h2>
+
+                            <p> "늘 목이 뻐근하고 잘 때 <br>
+                                목이 불편 했었어요. <br>
+                                따로 시간내어 운동 할 수 없어서 <br>
+                                홈트레이닝을 원했는데 <br>
+                                딱! 자세교정 클래스가 있어서 <br>바로 수강신청했죠.<br>
+                                일상에서 불편한 자세들을<br> 알려주고 교정해주니 <br>너무 편해요"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="shop">
+        <div class="shop_inner">
+            <h2 class="title_link en"><a href="#"><span>Shop</span>
+                    <img src="./images/icons/more_icon.png" alt="right_arrow"></a></h2>
+            <h1 class="title">인기 상품 &amp; 클래스</h1>
+
+
+            <div class="swiper shop_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide shop_flex">
+                        <div class="item_wrap">
+                            <img src="./images/items/item_01.png" alt="item_01">
+                            <div class="item_hover">
+                                <div class="item_detail_top">
+                                    <p class="regular">정기배송</p>
+
+                                    <a href="#" class="heart"> </a>
+
+                                </div>
+
+                                <h1 class="item_detail_title">
+                                    닭가슴살 샐러드
+                                </h1>
+
+                                <p class="item_detail_price">
+                                    &#8361; 7,000
+                                </p>
+
+                                <div class="item_detail_btns">
+                                    <a href="#">장바구니</a>
+                                    <a href="#">구매하기</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shop_flex">
+                        <div class="item_wrap">
+                            <img src="./images/items/item_02.png" alt="item_02">
+                            <div class="item_hover">
+                                <div class="item_detail_top">
+                                    <p class="regular">정기배송</p>
+                                    <a href="#" class="heart"> </a>
+                                </div>
+
+                                <h2 class="item_detail_title">
+                                    아이솔레이트<br>단백질 보충제(2.27kg)
+                                </h2>
+
+                                <p class="item_detail_price">
+                                    &#8361; 79,900
+                                </p>
+
+                                <div class="item_detail_btns">
+                                    <a href="#">장바구니</a>
+                                    <a href="#">구매하기</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shop_flex">
+                        <div class="item_wrap">
+                            <img src="./images/items/item_03.png" alt="item_03">
+                            <div class="item_hover">
+                                <div class="item_detail_top">
+                                    <p class="regular">정기결제</p>
+                                    <a href="#" class="heart"></a>
+                                </div>
+
+                                <h2 class="item_detail_title">
+                                    자세교정 온라인 1:1 <span class="en">PT</span><br>1달 이용권
+                                </h2>
+
+                                <p class="item_detail_price">
+                                    &#8361; 270,000
+                                </p>
+
+                                <div class="item_detail_btns">
+                                    <a href="#">장바구니</a>
+                                    <a href="#">구매하기</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shop_flex">
+                        <div class="item_wrap">
+                            <img src="./images/items/item_04.png" alt="item_04">
+                            <div class="item_hover">
+                                <div class="item_detail_top">
+                                    <p class="regular">EVENT</p>
+                                    <a href="#" class="heart"></a>
+                                </div>
+
+                                <h1 class="item_detail_title">
+                                    <span class="en">FitCon</span> 더플백
+                                </h1>
+
+                                <p class="item_detail_price">
+                                    &#8361; 7,000
+                                </p>
+
+                                <div class="item_detail_btns">
+                                    <a href="#">장바구니</a>
+                                    <a href="#">구매하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shop_flex">
+                        <div class="item_wrap">
+                            <img src="./images/items/item_05.png" alt="item_05">
+                            <div class="item_hover">
+                                <div class="item_detail_top">
+                                    <p class="regular">정기결제</p>
+                                    <a href="#" class="heart"></a>
+                                </div>
+
+                                <h2 class="item_detail_title">
+                                    온라인 그룹 라이브<br>:홈트레이닝 마스터
+                                </h2>
+
+                                <p class="item_detail_price">
+                                    &#8361; 160,000
+                                </p>
+
+                                <div class="item_detail_btns">
+                                    <a href="#">장바구니</a>
+                                    <a href="#">구매하기</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next mb_color "></div>
+                <div class="swiper-button-prev mb_color"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_box"></div>
+        <div class="footer_inner">
+            <div class="f_flex">
+                <div>
+                    <ul class="f_flex">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">사업정보확인</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+                    <div class="f_flex">
+                        <div><img src="./images/f_logo.png" alt="f_log">
+                        </div>
+                        <div class="f_text">
+                            <p>서울 서대문구 통일로 97</p>
+                            <p>대표이사 : 강한자 사업자등록번호 : 123.456.7890 neltique123@gmail.com</p>
+                            <p>© FitCon. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <ul class="f_flex">
+                        <li><a href="https://www.instagram.com/" id="f_instagram" target="_blank">
+                                <div>
+                                    <img src="./images/instagram.svg" alt="f_instagram">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D2ca4a0a5-bfc2-4883-8190-9b27fc330ccb#login"
+                                id=f_kakao target="_blank">
+                                <img src="./images/kakao.svg" alt="f_kakao">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="./js/tab.js"></script>
+    <script defer src="./js/trainer.js"></script>
+    <script defer src="./js/slide.js"></script>
+
+
+</body>
+
+</html>

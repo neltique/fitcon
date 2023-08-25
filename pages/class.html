@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450, initial-scale=1.0">
+    <title>FitCon</title>
+
+
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- noto sans kr -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- EXO2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- 슬라이드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../css/global_style.css">
+    <link rel="stylesheet" href="../css/class_style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header_wrap">
+            <div class="header_box">
+            </div><!-- header_box -->
+            <div class="header_inner">
+                <div class="h_logo"><a href="../index.html"><img src="../images/h_logo.png" alt="header_logo"></a></div>
+                <ul id="gnb">
+                    <!-- sub_category에 hover하면 flip 실행 -->
+                    <li class="sub_category">
+                        <div class="flip">
+                            <a href="#" class="front en">Class</a>
+                            <a href="#" class="back en">Class</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>Online</span></a></li>
+                            <li><a href="#"><span>강사진</span></a></li>
+                            <li><a href="#"><span>Offline</span></a></li>
+                            <li><a href="#"><span>오시는길</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flip">
+                            <a href="./brand.html" class="front en">Brand</a>
+                            <a href="./brand.html" class="back">Brand</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>회사소개</span></a></li>
+                            <li><a href="#" class="en"><span>Work</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flip">
+                            <a href="#" class="front">Shop</a>
+                            <a href="#" class="back">Shop</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>프로그램</span></a></li>
+                            <li><a href="#"><span>단백질쉐이크</span></a></li>
+                            <li><a href="#"><span>샐러드</span></a></li>
+                            <li><a href="#"><span>피트니스</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flip">
+                            <a href="#" class="front">Community</a>
+                            <a href="#" class="back">Community</a>
+                        </div>
+                        <ul>
+                            <li><a href="#"><span>공지사항</span></a></li>
+                            <li><a href="#"><span>이벤트</span></a></li>
+                            <li><a href="#"><span>후기</span></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul class="h_icons">
+                    <li>
+                        <a href="#">
+                            <div class="h_icon"><img src="../images/icons/member_01.png" alt="회원가입">
+                                <div class="h_icon_h">
+                                    <img src="../images/icons/member_02.png" alt="회원가입">
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="h_icon"><img src="../images/icons/user_01.png" alt="로그인">
+                                <div class="h_icon_h"><img src="../images/icons/user_02.png" alt="로그인"></div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="h_icon"><img src="../images/icons/cart_01.png" alt="장바구니">
+                                <div class="h_icon_h"><img src="../images/icons/cart_02.png" alt="장바구니"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- side_icon start -->
+    <div id="side_icon">
+        <ul>
+            <li>
+                <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D2ca4a0a5-bfc2-4883-8190-9b27fc330ccb#login"
+                    id="kakao_side" target="_blank">
+                    <img src="../images/kakao.svg" alt="kakao">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" id="instagram_side" target="_blank">
+                    <div class="side_normal">
+                        <img src="../images/instagram.svg" alt="instagram">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="goto_top">
+                    <p><span class="en">TOP</span></p>
+                </a>
+            </li>
+        </ul>
+
+
+
+    </div>
+    <!-- side_icon end -->
+
+
+
+    <div id="class_title">
+        <div>
+            <img src="../images/class_title.png" alt="class_title">
+        </div>
+    </div>
+
+    <div id="online_section">
+        <div class="section_title">
+            <h1 class="en">Online</h1>
+        </div>
+        <div class="recommand">
+            <h1 class="c_title"><span class="en">FitCon</span>을 추천합니다</h1>
+            <div class="r_flex">
+                <div class="r_box">
+                    <div class="r_text">
+                        <p>운동 목표 달성에<br>
+                            <span class="green">도움을 원하는</span> 사람들
+                        </p>
+                    </div>
+                </div>
+                <div class="r_box">
+                    <div class="r_text">
+                        <p>운동 목표 달성에<br>
+                            생활 속 <span class="purple">자세교정</span>을<br>
+                            원하는 사람들
+                        </p>
+                    </div>
+                </div>
+                <div class="r_box">
+                    <div class="r_text">
+                        <p>PT를 하고 싶은데<br>
+                            <span class="blue">시간이 부족</span>한 사람들
+                        </p>
+                    </div>
+                </div>
+                <div class="r_box">
+                    <div class="r_text">
+                        <p><span class="green">체계적</span>이고 <span class="blue">효율적</span>인
+                            <br>방법으로
+                            <span class="purple">건강관리</span>를<br>
+                            원하는 사람들
+
+                        </p>
+                    </div>
+                </div>
+                <div class="r_box">
+                    <div class="r_text">
+                        <p>집이나 헬스장에서<br>
+                            <span class="green">운동하는 방법</span>을<br>
+                            알고 싶은 사람들
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="one_to_one">
+            <h1 class="c_title en">Online 1:1 PT</h1>
+            <h2 class="c_sub_title">전문 트레이너와 함께하는 1대1 온라인 PT</h2>
+            <div class="class_inner">
+                <div class="class_flex">
+                    <div class="c1_image_box">
+                        <img src="../images/c1_01.jpg" alt="online_c1_01">
+                    </div>
+                    <div class="c1_text_box">
+                        <h2>등록</h2>
+                        <ul>
+                            <li>각 개인의 운동 목적에 맞는 클래스를 선택합니다.<br>
+                                (웨이트 트레이닝 또는 자세교정, 홈트레이닝, 식단 집중관리 등)
+                            </li>
+                            <li>신청서를 작성 후 등록하기를 완료 하면 상담원이 연락을 합니다.<br>
+                                (1~3일 소요) </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class_flex">
+                    <img src="../images/c1_next.png" alt="c1_next">
+                </div>
+                <div class="class_flex">
+                    <div class="c1_image_box">
+                        <img src="../images/c1_02.jpg" alt="online_c1_02">
+                    </div>
+                    <div class="c1_text_box">
+                        <h2>매칭</h2>
+                        <ul>
+                            <li>상담원과 상담 결과를 바탕으로<br>
+                                고객이 원하는 운동방향성과 생활패턴, 시간 등을 고려하여<br>
+                                개인에게 가장 적절한 트레이너를 배정해드립니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class_flex">
+                    <img src="../images/c1_next.png" alt="c1_next">
+                </div>
+                <div class="class_flex">
+                    <div class="c1_image_box">
+                        <img src="../images/c1_03.jpg" alt="online_c1_03">
+                    </div>
+                    <div class="c1_text_box">
+                        <h2>운동 프로그램에 따른 운동하기</h2>
+                        <ul>
+                            <li>개인의 생활 패턴, 수행능력 등을 고려한 체계적인<br>
+                                운동 프로그램에 따라 트레이너와 정해진 시간에 맞춰<br> 실시간 온라인 PT를 하며 운동을 진행합니다. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class_flex">
+                    <img src="../images/c1_next.png" alt="c1_next">
+                </div>
+                <div class="class_flex">
+                    <div class="c1_image_box">
+                        <img src="../images/c1_04.jpg" alt="online_c1_04">
+                    </div>
+                    <div class="c1_text_box">
+                        <h2>등록</h2>
+                        <ul>
+                            <li>수행한 운동을 바탕으로 운동 대한 피드백을 진행합니다.
+                            </li>
+                            <li>필요에 따라 운동 플랜을 조정하여 반영합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class_flex">
+                    <a href="#none" class="c_more_btn">등록하기 ></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="online_group">
+            <h1 class="c_title en">Online Group Exercise</h1>
+            <h2 class="c_sub_title">실시간 <span class="en">Live</span> 온라인 그룹 운동</h2>
+            <div class="how_to">
+                <div class="g_image_box">
+                    <div class="g_image_wrap">
+                        <img src="../images/c2_01.jpg" alt="c2_01">
+                    </div>
+                    <div class="bg_box"></div>
+                </div>
+                <div class="g_text_box">
+                    <h2>참여방법</h2>
+                    <div class="step_flex">
+                        <p class="step">STEP 1.</p>
+                        <p><img src="../images/c2_cam.png" alt="c2_cam"> <span class="en">ZOOM</span><span> 앱</span>
+                            설치하고</p>
+                    </div>
+                    <div class="step_flex top">
+                        <p class="step">STEP 2.</p>
+                        <p>전달받은 <span>링크로 접속</span> 만하면<br> 운동준비 끝!</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="feedback">
+                <div class="g_text_box">
+                    <h2>실시간피드백</h2>
+                    <p>내 모습과 전문가님의 모습을<br>
+                        <span>실시간</span> 으로 서로 볼 수 있으니까!<br>
+                        헬스장 PT처럼 <span>바로바로 피드백</span> 받아보세요.
+                    </p>
+                </div>
+                <div class="g_image_box">
+                    <div class="bg_box"></div>
+                    <div class="g_image_wrap">
+                        <img src="../images/c2_02.jpg" alt="c2_02">
+                    </div>
+                </div>
+            </div>
+
+            <div class="class_flex">
+                <a href="#none" class="c_more_btn">등록하기 ></a>
+            </div>
+
+        </div>
+    </div>
+    <div id="diet">
+        <h1 class="c_title en">Diet Management Program</h1>
+        <h2 class="c_sub_title">실시간 식단 피드백을 통한 밀착 식단 관리 프로그램</h2>
+
+        <div class="diet_content">
+            <div class="diet_img_box">
+                <div class="diet_img_1">
+                    <img src="../images/diet_1.jpg" alt="d_1">
+                </div>
+                <div class="diet_img_2">
+                    <div class="diet_img_21">
+                        <img src="../images/diet_21.jpg" alt="d_21">
+                    </div>
+                    <div class="diet_img_22">
+                        <img src="../images/diet_22.jpg" alt="d_22">
+                    </div>
+                </div>
+
+            </div>
+            <div class="diet_text">
+                <div>
+                    <h2>1. 운동목적에 적합한 식단 설계</h2>
+                    <p>근육량 증가 또는 체지방 감소 등 <span>고객의 목표</span>에 맞는<br>
+                        적합한 식단을 제공해드립니다. </p>
+                </div>
+
+                <div>
+                    <h2>2. 실시간 피드백</h2>
+                    <p>식단표를 바탕으로 식단 사진을 보내주시면 <span>실시간 피드백</span>을 합니다.<br>
+                        무엇을 먹어야 하는지, 어떻게 먹어야 하는 지 등<br>
+                        <span>궁금한 모든 것</span>을 <span>실시간</span>으로 해소시켜 드립니다.
+                    </p>
+                </div>
+                <div>
+                    <h2>3. 기호 / 역량에 따른 개인 맞춤 식단</h2>
+                    <p>선호하는 음식과 개인의 체형에 따라<br>
+                        <span>맛있고 건강한 식단</span>을 계획합니다.
+                    </p>
+                </div>
+                <div>
+                    <h2>4. 생활패턴 운동량 등에 맞는 섭취 권장량 파악</h2>
+                    <p>개인의 섭취 칼로리와 소모칼로리 파악 후<br>
+                        탄수화물, 단백질, 지방 섭취량을<br>
+                        <span>개개인에 맞춰 상세하게</span> 알려드립니다.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="communication">
+        <h1 class="c_title en">Continuous Communication</h1>
+        <h2 class="c_sub_title">항상 열려 있는 소통, 고객을 향한 끊임없는 두드림</h2>
+        <div class="cm_contents">
+            <div><img src="../images/phone.png" alt="phone"></div>
+            <div class="cm_text">aa
+
+                <div class="line l01"></div>
+                <div class="line l02"></div>
+                <div class="line l11"></div>
+                <div class="line l12"></div>
+
+                <p>운동을 진행하시면서<br>
+                    영상을 보내주시면<br>
+                    담당 트레이너가 고객의 <span>맞춤형</span><br>
+                    피드백을 제공하고 있으며<br>
+                    <br>
+                    운동, 식단 이외에도<br>
+                    <span>목표 달성에 관련된 모든 것</span>들을<br>
+                    문의해 주시면<br>
+                    성심성의껏 답변해 드리겠습니다.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="trainer_section">
+        <div class="section_title">
+            <h1 class="en">Trainer</h1>
+
+        </div>
+    </div>
+    <div id="offline_section">
+        <div class="section_title">
+            <h1 class="en">Offline</h1>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="book">
+        <!-- For Next/Prev Controls -->
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <div id="cover">
+            <img src="../images/trainer_01.jpg" alt="">
+        </div>
+        <!-- Pages -->
+        <div class="flip-book">
+            <!-- Page 1 -->
+            <div class="page_flip" id="p1">
+                <div class="page_front">
+                    <label for="c1" class="next-btn">
+                        <h1>page1</h1>
+                    </label>
+                </div>
+
+                <div class="page_back">
+                    <label for="c1" class="back-btn"> <img src="../images/trainer_02.jpg" alt=""></label>
+                </div>
+            </div>
+            <!-- Page 2 -->
+            <div class="page_flip" id="p2">
+                <div class="page_front">
+                    <label for="c2" class="next-btn">
+                        <h1>page2</h1>
+                    </label>
+                </div>
+                <div class="page_back">
+                    <label for="c2" class="back-btn"><img src="../images/trainer_03.jpg" alt=""></label>
+                </div>
+
+            </div>
+            <div class="page_flip" id="p3">
+                <div id="last_page">
+                    <h1>page3</h1>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="offline_area">
+        <ul>
+            <li>
+                <figure class="snip rot_image">
+                    <img src="../images/offline_area_01.jpg" alt="offline_01" />
+                    <div class="title">
+                        <div>
+                            <h2>Penny</h2>
+                            <h4>Tool</h4>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption>
+                </figure>
+                <div class="shadow"></div>
+            </li>
+            <li>
+                <figure class="snip rot_image">
+                    <img src="../images/offline_area_02.jpg" alt="offline_02" />
+                    <div class="title">
+                        <div>
+                            <h2>Penny</h2>
+                            <h4>Tool</h4>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption>
+                </figure>
+                <div class="shadow"></div>
+            </li>
+
+            <li>
+                <figure class="snip rot_image">
+                    <img src="../images/offline_area_03.jpg" alt="offline_03" />
+                    <div class="title">
+                        <div>
+                            <h2>Penny</h2>
+                            <h4>Tool</h4>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption>
+                </figure>
+                <div class="shadow"></div>
+            </li>
+
+            <li>
+                <figure class="snip rot_image">
+                    <img src="../images/offline_area_04.jpg" alt="offline_04" />
+                    <div class="title">
+                        <div>
+                            <h2>Machine Zone</h2>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption>
+                </figure>
+                <div class="shadow"></div>
+            </li>
+
+            <li>
+                <figure class="snip rot_image">
+                    <img src="../images/offline_area_05.jpg" alt="offline_05" />
+                    <div class="title">
+                        <div>
+                            <h2>asdasdasdasdasd</h2>
+                            <h4>Tool</h4>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption>
+                </figure>
+                <div class="shadow"></div>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer_box"></div>
+        <div class="footer_inner">
+            <div class="f_flex">
+                <div>
+                    <ul class="f_flex">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">사업정보확인</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+                    <div class="f_flex">
+                        <div><img src="../images/f_logo.png" alt="f_log">
+                        </div>
+                        <div class="f_text">
+                            <p>서울 서대문구 통일로 97</p>
+                            <p>대표이사 : 강한자 사업자등록번호 : 123.456.7890 neltique123@gmail.com</p>
+                            <p>© FitCon. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <ul class="f_flex">
+                        <li><a href="https://www.instagram.com/" id="f_instagram" target="_blank">
+                                <div>
+                                    <img src="../images/instagram.svg" alt="f_instagram">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D2ca4a0a5-bfc2-4883-8190-9b27fc330ccb#login"
+                                id=f_kakao target="_blank">
+                                <img src="../images/kakao.svg" alt="f_kakao">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+</body>
+
+</html>
