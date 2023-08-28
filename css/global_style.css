@@ -357,6 +357,11 @@ footer {
     color: #aaa;
 }
 
+.footer_inner ul li a:hover {
+    color: #4e505b;
+    font-weight: 600;
+}
+
 .footer_inner .f_flex {
     display: flex;
     justify-content: space-between;
