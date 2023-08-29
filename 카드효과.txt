@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Flipping Cards</title>
+
+    <style>
+        .card {
+            perspective: 5000px;
+            position: relative;
+            height: 500px;
+            background-color: black;
+        }
+
+        .card__side {
+            height: 100%;
+            transition: all 0.8s ease;
+            width: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .card__side--front {
+            background: linear-gradient(-45deg, #f403d1, #64b5f6);
+        }
+
+        .card__side--back {
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(-45deg, #64b5f6, #f403d1);
+
+        }
+
+
+        .card:hover .card__side--front {
+            transform: rotateY(-180deg);
+        }
+
+        .card:hover .card__side--back {
+            transform: rotateY(0);
+        }
+
+        .row {
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="card">
+            <div class="card__side card__side--front">
+            </div>
+            <div class="card__side 
+                    card__side--back                 ">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

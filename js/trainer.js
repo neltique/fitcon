@@ -19,20 +19,15 @@ function changeTrainerImg(id) {
 
 
 const data = [["제이스", "./images/t_name_01.png", "<span class=en>FitCon CEO</span><br>국제 트레이너 &amp; 스포츠 영양코치"],
-["리사", "./images/t_name_02.png", "<span class= en>FitCon</span> 온라인 <span=en>PT</span> 대표강사<br>생활체육지도자 2급 보유<br>필라테스 <span=en>MAT</span>, <span=en>PROPS</span> 자격증 보유"], ["마이클", "./images/t_name_03.png", "<span class=en>Fitcon</span> 온라인 <span class=en>PT</span> 대표강사<br>미국스포츠의학회(<span class=en>NASM</span>) 마스터트레이너<br>생활체육지도 2급 보유"]];
+
+["리사", "./images/t_name_02.png", "<span class= en>FitCon</span> 온라인 <span=en>PT</span> 대표강사<br>생활체육지도자 2급 보유<br>필라테스 <span=en>MAT</span>, <span=en>PROPS</span> 자격증 보유"],
+
+["마이클", "./images/t_name_03.png", "<span class=en>Fitcon</span> 온라인 <span class=en>PT</span> 대표강사<br>미국스포츠의학회(<span class=en>NASM</span>) 마스터트레이너<br>생활체육지도 2급 보유"]];
 
 function changeTrainerText(id) {
     let name_en = document.getElementById("t_curr_name_en");
 
     let curr_Num = parseInt(id[id.length - 1] - 1);
-
-    // 내용 채우기
-    // 1. 이름
-    // 2. 영어 이름 이미지 소스 변경
-    // 3. 인물의 내역 변경을 타이핑 하는 애니메이션으로
-    // 4. 버튼의 이름 변경
-    // 5. 버튼의 href 바꿔야 함 -> 아직안함
-
 
     let name = new Typed('#t_curr_name', {
         strings: [data[curr_Num][0]],
