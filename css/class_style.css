@@ -494,12 +494,75 @@
     position: relative;
 }
 
-#advantage .ad_inner .ad_flex .ad_box .ad_front {
+#advantage .ad_inner .ad_flex .ad_box .ad_face{
     width: 100%;
     height: 100%;
+    border-radius: 15px;
+
+    transition: all 0.8s ease;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+#advantage .ad_inner .ad_flex .ad_box .ad_front {
     padding-bottom: 100px;
     background-color: #f1f3f4;
+    text-align: center;
+
 }
+#advantage .ad_inner .ad_flex .ad_box .ad_front
+{
+    padding-top:50px;
+}
+
+#advantage .ad_inner .ad_flex .ad_box .ad_front h2{
+    color:#4e505b;
+    font-size:42px;
+    line-height: 100%;
+    padding-top:70px;
+}
+
+#advantage .ad_inner .ad_flex .ad_box .ad_back{
+    transform: rotateY(180deg);
+    position:absolute;
+    left:0;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#advantage .ad_inner .ad_flex .ad_box .ad_back p
+{
+    font-size:24px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#advantage .ad_inner .ad_flex .ad_box:hover .ad_front{
+    transform: rotateY(-180deg);
+
+}
+
+#advantage .ad_inner .ad_flex .ad_box:hover  .ad_back{
+    transform: rotateY(0);
+
+}
+
+
+.ad_01{
+    background:linear-gradient(to right, #78CAB6, #7EB9B9);
+}
+.ad_02{
+    background:linear-gradient(to right, #7EB9B9, #84A9BC);
+}
+.ad_03{
+    background:linear-gradient(to right, #84A9BC, #8998BE);
+}
+.ad_04{
+    background:linear-gradient(to right, #8998BE, #8F87C1);
+}
+
 
 .ts_inner {
     padding: 100px 0;
@@ -735,7 +798,17 @@
 
 
 
-
+.maps
+{
+    width: 900px;
+    height: 900px;
+    margin:0 auto;
+}
+.maps iframe
+{   width: 100%;
+    height:100%;
+    max-width: 100%;
+}
 
 
 
