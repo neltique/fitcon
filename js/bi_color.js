@@ -34,14 +34,7 @@ $(() => {
                 "line-height": "100%",
             });
             prevColrId = nextColorId;
-
         }
-
-
-
-
-
-
     });
 })
 
