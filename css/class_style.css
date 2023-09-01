@@ -839,6 +839,7 @@
 }
 
 #offline_section .hours {
+
     background-color: #f1f3f4;
     color: #22252b;
     width: 700px;
@@ -904,6 +905,13 @@
 }
 
 
+#offline_section {
+    padding-bottom: 200px;
+}
+
+#offline_section .inner {
+    padding-top: 100px;
+}
 
 #offline_section .inner .location {
     font-size: 28px;
@@ -913,14 +921,16 @@
 }
 
 #offline_section .inner .c_title {
-    padding-top: 100px;
     padding-bottom: 50px;
 }
 
 .maps {
-    width: 1200px;
-    height: 675px;
+    width: 800px;
+    height: 450px;
     margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+
 }
 
 .maps iframe {
@@ -931,11 +941,11 @@
 
 /* offline */
 
-figure.snip {
+.offline_area ul li.snip {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 40px;
     min-width: 230px;
     width: 500px;
     color: #ffffff;
@@ -952,9 +962,9 @@ figure.snip {
 
 
 
-figure.snip *,
-figure.snip *:before,
-figure.snip *:after {
+.offline_area ul li.snip *,
+.offline_area ul li.snip *:before,
+.offline_area ul li.snip *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.55s ease;
@@ -962,22 +972,22 @@ figure.snip *:after {
 }
 
 
-figure.snip img {
+.offline_area ul li.snip img {
     max-width: 100%;
     backface-visibility: hidden;
     vertical-align: bottom;
     opacity: 0.9;
 }
 
-figure.snip .title {
+.offline_area ul li.snip .title {
     position: absolute;
     top: 58%;
     left: 25px;
     padding: 5px 10px 10px;
 }
 
-figure.snip .title:before,
-figure.snip .title:after {
+.offline_area ul li.snip .title:before,
+.offline_area ul li.snip .title:after {
     height: 2px;
     width: 400px;
     position: absolute;
@@ -985,22 +995,22 @@ figure.snip .title:after {
     background-color: #ffffff;
 }
 
-figure.snip .title:before {
+.offline_area ul li.snip .title:before {
     top: 0;
     left: 10px;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
 
-figure.snip .title:after {
+.offline_area ul li.snip .title:after {
     bottom: 0;
     right: 10px;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
-figure.snip .title div:before,
-figure.snip .title div:after {
+.offline_area ul li.snip .title div:before,
+.offline_area ul li.snip .title div:after {
     width: 2px;
     height: 300px;
     position: absolute;
@@ -1008,55 +1018,43 @@ figure.snip .title div:after {
     background-color: #ffffff;
 }
 
-figure.snip .title div:before {
+.offline_area ul li.snip .title div:before {
     top: 10px;
     right: 0;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
 }
 
-figure.snip .title div:after {
+.offline_area ul li.snip .title div:after {
     bottom: 10px;
     left: 0;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
 }
 
-figure.snip h2,
-figure.snip h4 {
+.offline_area ul li.snip h2,
+.offline_area ul li.snip h4 {
     margin: 0;
     text-transform: uppercase;
 }
 
-figure.snip h2 {
+.offline_area ul li.snip h2 {
+    font-size: 24px;
+    line-height: 100%;
     font-weight: 400;
 }
 
-figure.snip h4 {
+.offline_area ul li.snip h4 {
     display: block;
     font-weight: 700;
-    background-color: #ffffff;
+    background-color: #f1f3f4;
     padding: 5px 10px;
-    color: #000000;
+    color: #22252b;
 }
 
-figure.snip figcaption {
-    position: absolute;
-    bottom: 42%;
-    left: 25px;
-    text-align: left;
-    opacity: 0;
-    padding: 5px 60px 5px 10px;
-    font-size: 0.8em;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-}
 
-figure.snip figcaption p {
-    margin: 0;
-}
 
-figure.snip a {
+.offline_area ul li.snip a {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1064,49 +1062,49 @@ figure.snip a {
     right: 0;
 }
 
-figure.snip:hover img,
-figure.snip.hover img {
+.offline_area ul li.snip:hover img,
+.offline_area ul li.snip.hover img {
     zoom: 1;
     filter: alpha(opacity=35);
     -webkit-opacity: 0.35;
     opacity: 0.35;
 }
 
-figure.snip:hover .title:before,
-figure.snip.hover .title:before,
-figure.snip:hover .title:after,
-figure.snip.hover .title:after,
-figure.snip:hover .title div:before,
-figure.snip.hover .title div:before,
-figure.snip:hover .title div:after,
-figure.snip.hover .title div:after {
+.offline_area ul li.snip:hover .title:before,
+.offline_area ul li.snip.hover .title:before,
+.offline_area ul li.snip:hover .title:after,
+.offline_area ul li.snip.hover .title:after,
+.offline_area ul li.snip:hover .title div:before,
+.offline_area ul li.snip.hover .title div:before,
+.offline_area ul li.snip:hover .title div:after,
+.offline_area ul li.snip.hover .title div:after {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
 }
 
-figure.snip:hover .title:before,
-figure.snip.hover .title:before,
-figure.snip:hover .title:after,
-figure.snip.hover .title:after {
+.offline_area ul li.snip:hover .title:before,
+.offline_area ul li.snip.hover .title:before,
+.offline_area ul li.snip:hover .title:after,
+.offline_area ul li.snip.hover .title:after {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
 }
 
-figure.snip:hover figcaption,
-figure.snip.hover figcaption {
+.offline_area ul li.snip:hover figcaption,
+.offline_area ul li.snip.hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
 
 
-figure.snip::before,
-figure.snip::after {
+.offline_area ul li.snip::before,
+.offline_area ul li.snip::after {
     content: '';
     position: absolute;
 }
 
-figure.snip::before {
+.offline_area ul li.snip::before {
     bottom: -8px;
     left: 0;
     background-color: #d0d0d0;
@@ -1115,7 +1113,7 @@ figure.snip::before {
     transform: rotateX(90deg) translateY(-8px);
 }
 
-figure.snip::after {
+.offline_area ul li.snip::after {
     top: 0;
     left: -8px;
     width: 16px;
@@ -1125,24 +1123,15 @@ figure.snip::after {
 }
 
 /*  */
+.offline_area {
+    width: 100%;
+    overflow: hidden;
+}
+
 .offline_area ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 50px 0;
 }
 
-.offline_area ul li {
-    position: relative;
-    margin: 25px;
-    background-color: red;
-}
-
-.offline_area ul li:nth-child(2n) {
-    background-color: blue;
-}
-
-
-.offline_area ul li .rot_image:hover {
+.offline_area ul li.rot_image:hover {
     transform: rotate(0);
 }
