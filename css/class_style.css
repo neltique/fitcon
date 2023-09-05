@@ -10,7 +10,7 @@
 .section_title {
     width: 100%;
     background: radial-gradient(circle,
-            #8f87c1, #78cab6, #d5d0cf, #8f87c1, #78cab6);
+            #8f87c1, rgb(120, 202, 182), #d5d0cf, rgb(143, 135, 193), #78cab6);
     background-size: 400%;
     height: 200px;
     animation: section_title_bg 15s linear infinite reverse;
