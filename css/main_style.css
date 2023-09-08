@@ -1,9 +1,7 @@
 @charset "utf-8";
 
 /* main_banner start */
-.main_banner {
-    width: 100%;
-}
+#main_banner {}
 
 .mb_color {
     color: #f1f3f4;
@@ -13,31 +11,38 @@
     background-color: #f1f3f4;
 }
 
+.buttons {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .mb_prev {
-    left: var(--swiper-navigation-sides-offset, 5%);
+    left: var(--swiper-navigation-sides-offset, 50%);
+    transform: translateX(-800px);
     right: auto;
 }
 
 .mb_next {
-    right: var(--swiper-navigation-sides-offset, 5%);
+    right: var(--swiper-navigation-sides-offset, 50%);
+    transform: translateX(800px);
     left: auto;
 }
 
-
 #mb_01 {
-    position: relative;
+    background: url(../images/main_banner/main_banner_01.jpg) no-repeat center top;
+    height: 900px;
 }
 
-.mb_01_text_01 {
-    position: absolute;
-    left: 300px;
-    top: 250px;
+#mb_01 .mb_01_flex {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 200px;
 }
+
+.mb_01_text_01 {}
 
 .mb_01_text_02 {
-    position: absolute;
-    left: 1151px;
-    top: 640px;
     text-align: right;
 }
 
@@ -60,40 +65,60 @@
 
 .mb_01_text_01 a.more_btn {
     font-size: 20px;
+    margin-bottom: 100px;
 }
 
 
-#mb_02 {
-    position: relative;
-}
+
+
+
 
 #mb_01 a {
     padding: 10px 0;
 }
 
-#mb_02 a {
+#mb_02 {
+    background: url(../images/main_banner/main_banner_02.jpg) no-repeat center top;
+    height: 900px;
+}
+
+#mb_02 .text_box {
+    padding-top: 706px;
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
+#mb_02 .text_box a {
     padding: 10px 0;
     border-radius: 24px;
     border-color: #ff5839;
     border-width: 4px;
     border-style: solid;
-    position: absolute;
-    left: 1320px;
-    top: 706px;
     z-index: 10;
     background: linear-gradient(to right, #ff5839 0%, #ff5839 100%) calc(100% - var(--p, 0%)) / var(--p, 0%) no-repeat;
     background-color: #000;
 }
 
-#mb_03 a {
+
+#mb_03 {
+    background: url(../images/main_banner/main_banner_03.jpg) no-repeat center top;
+    height: 900px;
+}
+
+#mb_03 .text_box {
+    padding-top: 670px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#mb_03 .text_box a {
     padding: 10px 0;
     border-radius: 24px;
     border-color: #578e82;
     border-width: 4px;
     border-style: solid;
-    position: absolute;
-    left: 440px;
-    top: 670px;
     z-index: 10;
     background: linear-gradient(to right, #578e82 0%, #578e82 100%) calc(100% - var(--p, 0%)) / var(--p, 0%) no-repeat;
     background-color: transparent;
@@ -313,7 +338,8 @@ button {
 
 #offline_bg_01 {
     height: 400px;
-    background: url(../images/offline_bg_01.jpg) no-repeat center center fixed;
+    background: url(../images/offline_bg_01.jpg) center center fixed;
+    background-repeat: repeat-y;
 }
 
 
