@@ -182,6 +182,14 @@ header .header_inner ul#gnb>li ul li a:hover span {
     background-size: 100% 100%;
 }
 
+header .header_inner .h_logo {
+    width: 200px;
+}
+
+header .header_inner .h_logo img {
+    width: 100%;
+}
+
 header .header_inner ul.h_icons {
 
     display: flex;

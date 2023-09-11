@@ -109,6 +109,20 @@
     padding-bottom: 100px;
 }
 
+#bi .bi_inner .bi_content .logo_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+#bi .bi_inner .bi_content .logo_wrap .logo_box {
+    align-items: center;
+    width: 750px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
 #bi .bi_inner .bi_content p {
     padding-top: 40px;
     font-size: 24px;
