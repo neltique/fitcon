@@ -30,6 +30,7 @@ body {
     background-color: #4e505b;
     background-image: url(../images/background.png);
     min-width: 1450px;
+
 }
 
 .en {
@@ -53,7 +54,7 @@ header .header_wrap {
 
 header .header_wrap .header_box {
     height: 100px;
-    width: 95%;
+    width: 94.588%;
     position: absolute;
     left: 0%;
     top: 0;
@@ -243,6 +244,7 @@ header .header_inner ul.h_icons li .h_icon:hover .h_icon_h {
     background-color: #4e505b;
     color: #f1f3f4;
     margin-bottom: 10px;
+
 }
 
 #side_icon a#instagram_side div {
@@ -278,6 +280,10 @@ header .header_inner ul.h_icons li .h_icon:hover .h_icon_h {
     background: linear-gradient(to right, #f7e409 0%, #f7e409 100%) calc(100% - var(--p, 0%)) / var(--p, 0%) no-repeat;
     background-color: #4e505b;
     transition: .4s, background-position 0s;
+}
+
+.s_hide {
+    visibility: hidden;
 }
 
 #side_icon a#instagram_side {
@@ -327,7 +333,7 @@ footer {
 }
 
 .footer_box {
-    width: 95%;
+    width: 94%;
     height: 200px;
     background-color: #f1f3f4;
     position: absolute;

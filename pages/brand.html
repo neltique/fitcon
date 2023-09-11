@@ -24,7 +24,8 @@
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/global_style.css">
     <link rel="stylesheet" href="../css/brand_style.css">
@@ -135,7 +136,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" id="goto_top">
+                <a href="#none" id="goto_top">
                     <p><span class="en">TOP</span></p>
                 </a>
             </li>
@@ -155,14 +156,12 @@
 
     <div id="brand_intro">
         <div class="inner">
-            <div class="building_img">
+            <div class="building_img" data-aos="fade-right">
                 <div class="img_wrap">
                     <img src="../images/fitcon_building.jpg" alt="building">
                 </div>
             </div>
-            <div class="message">
-
-
+            <div class="message" data-aos="fade-left" data-aos-duration="1000">
                 <h1 class="en b_title">Ceo’s Message</h1>
                 <p><span class="en">FitCon</span>은 최신 기술과 전문적인 지식을<br>
                     활용하여 온라인 <span class="en">PT</span> 서비스와<br>
@@ -186,29 +185,30 @@
 
     <!-- bi start -->
     <div id="bi">
-        <div class="bi_bg">
+        <!-- <div class="bi_bg">
             <img src="../images/bi_bg.png" alt="bi_bg">
-        </div>
+        </div> -->
         <div class="bi_inner">
-            <h1 class="en b_title">Brand Identity</h1>
-            <div class="bi_content"><img src="../images/logo_white_bg.png" alt="bi_logo"></div>
-            <div class="bi_content"><img src="../images/bi_img_01.png" alt="">
-                <p><span class="en">FitCon</span>은 <span class="en">Fitness Contigo</span> ‘당신과 함께 피트니스’라는 뜻의 스페인어를
+            <h1 class="en b_title" data-aos="fade-up">Brand Identity</h1>
+            <div class="bi_content" data-aos="fade-up"><img src="../images/logo_white_bg.png" alt="bi_logo"></div>
+            <div class="bi_content"><img src="../images/bi_img_01.png" alt="" data-aos="fade-up">
+                <p data-aos="fade-up"><span class="en">FitCon</span>은 <span class="en">Fitness Contigo</span> ‘당신과 함께
+                    피트니스’라는 뜻의 스페인어를
                     축약하여<br>
                     <span class="underline_mint">언제나 당신의 운동에 함께 하겠다</span>는 의지를 담았습니다.
                 </p>
             </div>
 
             <div class="bi_content">
-                <div><img src="../images/bi_type.png" alt="type"></div>
-                <p>한 눈에 알아 볼 수 있는 글꼴로 선택했으며,<br>
+                <div data-aos="fade-up"><img src="../images/bi_type.png" alt="type"></div>
+                <p data-aos="fade-up">한 눈에 알아 볼 수 있는 글꼴로 선택했으며,<br>
                     휘어지는 부분의 곡률로 부터 <span class="underline_purple">유연함</span>과 <span class="underline_mint">역동성</span>을
                     느낄 수 있다.</p>
             </div>
 
 
             <div class="bi_content">
-                <div class="bi_colors">
+                <div class="bi_colors" data-aos="fade-up">
                     <div class="bi_color" id="bi_color_01">
                         <h4 class="en cmyk">CMYK(52, 0, 35, 0)</h4>
                         <h4 class="en rgb">RGB(120, 202, 282)</h4>
@@ -226,17 +226,17 @@
                         <h4 class="en hexCode">#8f87c1</h4>
                     </div>
                 </div>
-                <p>차분한 색상의 차가운 계열의 색상이 <span class="underline_mint">안정적</span>이고 <span
+                <p data-aos="fade-up">차분한 색상의 차가운 계열의 색상이 <span class="underline_mint">안정적</span>이고 <span
                         class="underline_mint">신뢰감</span>을 주고,<br>
                     낮은 채도 색상으로 무거운 표현했다.</p>
             </div>
 
             <div class="bi_content">
-                <div class="bi_color_gradient">
+                <div class="bi_color_gradient" data-aos="fade-up">
 
                 </div>
 
-                <p>서체와 색상에서 비교적 정적임이 더 느껴진다.<br>
+                <p data-aos="fade-up">서체와 색상에서 비교적 정적임이 더 느껴진다.<br>
                     그라데이션을 통해 부족한 역동성을 보완했다.</p>
             </div>
         </div>
@@ -245,27 +245,27 @@
 
     <div id="values">
         <div class="value_inner">
-            <h1 class="en b_title">Our Values
+            <h1 class="en b_title" data-aos="fade">Our Values
             </h1>
 
             <div class="keys">
-                <div class="key">
+                <div class="key" data-aos="flip-left" data-aos-delay="100">
                     <h2>01</h2>
                     <h1>신뢰</h1>
                     <p>목표 달성을<br>약속드리겠습니다.</p>
                 </div>
-                <div class="key">
+                <div class="key" data-aos="flip-left" data-aos-delay="200">
                     <h2>02</h2>
                     <h1>같이</h1>
                     <p>혼자가 아닙니다.<br>함께 하도록 하겠습니다.</p>
                 </div>
-                <div class="key">
+                <div class="key" data-aos="flip-left" data-aos-delay="300">
                     <h2>03</h2>
                     <h1>지속적인</h1>
                     <p>고객의 목표를<br>포기하지 않겠습니다.</p>
                 </div>
             </div>
-            <p>언제나 고객의 효율적인 운동 목표 달성을 위해 연구하고 노력하여<br>
+            <p data-aos="fade">언제나 고객의 효율적인 운동 목표 달성을 위해 연구하고 노력하여<br>
                 항상 <span class="en">FitCon</span>이 함께 하겠습니다.</p>
 
 
@@ -273,9 +273,9 @@
     </div><!-- our values end -->
 
     <div id="works">
-        <h1 class="en b_title">Works</h1>
+        <h1 class="en b_title" data-aos="fade">Works</h1>
         <div class="works_inner">
-            <div class="works_content">
+            <div class="works_content" data-aos="fade-right">
                 <h2 class="en">FitCon Online PT</h2>
                 <div class="works_img_box"><img src="../images/works_01.jpg" alt="online works"></div>
                 <p>홈트레이닝, 헬스장에서 운동하는 방법, 체형교정 등<br>
@@ -283,7 +283,7 @@
                     운동, 식단을 수립하여 서비스를 제공합니다.</p>
             </div>
 
-            <div class="works_content">
+            <div class="works_content" data-aos="fade-left">
                 <h2 class="en">FitCon GYM</h2>
                 <div class="works_img_box"><img src="../images/works_02.jpg" alt="offline_works"></div>
                 <p><span class="underline_purple">최신식 장비</span>를 갖춘 운동공간이 있으며,<br>
@@ -337,8 +337,12 @@
 
     </footer>
     <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script defer src="../js/bi_color.js"></script>
-
+    <script defer src="../js/top.js"></script>
 </body>
 
 </html>
