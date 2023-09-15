@@ -15,10 +15,10 @@
 }
 
 #brand_intro .inner {
-    width: 1620px;
+    width: 100%;
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
     transform: translateX(-150px);
 }
 
@@ -28,6 +28,7 @@
     border-radius: 0px 300px 300px 0px;
     overflow: hidden;
     position: relative;
+
 
 
 }
@@ -43,11 +44,12 @@
 }
 
 #brand_intro .inner .message {
-    width: 30%;
+    width: 620px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 100px;
+    box-sizing: border-box;
+
 
 
 }

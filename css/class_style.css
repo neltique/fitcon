@@ -478,7 +478,7 @@
 #advantage .ad_inner {
     width: 1320px;
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 #advantage .ad_inner .ad_flex {

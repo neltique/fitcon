@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 /* main_banner start */
-#main_banner {}
+#main_banner {
+    overflow: hidden;
+}
 
 .mb_color {
     color: #f1f3f4;
@@ -340,6 +342,8 @@ button {
     height: 400px;
     background: url(../images/offline_bg_01.jpg) center center fixed;
     background-repeat: repeat-y;
+    overflow: hidden;
+
 }
 
 
@@ -354,6 +358,7 @@ button {
 
 .trainers_inner {
     width: 1320px;
+    overflow: hidden;
     margin: 0 auto;
     padding-top: 300px;
     padding-bottom: 400px;
@@ -511,14 +516,14 @@ button {
 #ba_02 {
     scale: 0.85;
     position: absolute;
-    left: 780px;
+    left: 56%;
     top: 0;
 }
 
 #ba_03 {
     scale: 0.85;
     position: absolute;
-    left: 400px;
+    left: 23%;
     top: 830px;
 }
 
@@ -537,7 +542,7 @@ button {
     scale: 0.6;
     border-radius: 45px;
     position: absolute;
-    left: 960px;
+    left: 67%;
     top: 670px;
 }
 
@@ -682,13 +687,17 @@ button {
 
 
 /* shop start*/
-
+#shop {
+    overflow: hidden;
+}
 
 .shop_inner {
     width: 1320px;
     margin: 0 auto;
     padding-bottom: 200px;
     padding-top: 400px;
+    overflow: hidden;
+
 
 }
 
